@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView android:id="@+id/display_message"
+        android:text="Visit https://www.online-calculator.com/"
+        android:textSize="21sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web|email"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="21sp"
+        android:text="About"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17sp"
+        android:text="An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics. The first solid-state electronic calculator was created in the early 1960s."
+        />
+    <CheckBox android:id="@+id/javascript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change site"
+        android:textSize="17sp"
+        android:onClick="onCheckboxClickedSite"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Give us feedback" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_gravity="center_horizontal"
+        android:onClick="OnSendFeedback"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Go directly to calculator"
+        android:onClick="onGoToCalc"/>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onToggleClicked"
+        android:textOff="Unlike our app"
+        android:textOn="Like our app" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="closeButton"
+        android:text="close" />
+
+
+</LinearLayout>

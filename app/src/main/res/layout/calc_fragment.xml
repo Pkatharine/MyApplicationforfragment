@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/numberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/resultField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/grid"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:alignmentMode="alignBounds"
+        android:background="#ffffffff"
+        android:columnOrderPreserved="false"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:useDefaultMargins="true" >
+
+        <Button android:text="в наносекунди"
+            android:id="@+id/nano"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в мікросекунди"
+            android:id="@+id/micro"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в секунди"
+            android:id="@+id/sec"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в хвилини"
+            android:id="@+id/min"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в години"
+            android:id="@+id/hour"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в добу"
+            android:id="@+id/doba"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в неділю"
+            android:id="@+id/week"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Button android:text="в рік"
+            android:id="@+id/year"
+            android:layout_height="50dp"
+            android:layout_width="170dp"/>
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="dark mode"
+            />
+
+        <Button
+            android:id="@+id/closeButtonCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="closeButtonCalc"
+            android:text="close" />
+
+    </GridLayout>
+
+
+
+</LinearLayout>

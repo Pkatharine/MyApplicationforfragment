@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="21sp"
+        android:text="Правила використання"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:textSize="17sp"
+    android:text="Натисніть на перше поле та введіть значення в секундах. Натисніть кнопку із, текст якої відповідає вашим вимогам. Результат буде виведений в полі нижче, ніж те що для вводу. За потреби можна увімкнути темний режим."
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="closeButton"
+        android:text="close" />
+
+</LinearLayout>

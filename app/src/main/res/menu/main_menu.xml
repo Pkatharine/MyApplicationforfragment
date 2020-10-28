@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/set_calc"
+        android:orderInCategory="1"
+        android:title="Open calc" />
+    <item
+        android:id="@+id/set_about"
+        android:orderInCategory="3"
+        android:title="Open about" />
+    <item
+        android:id="@+id/set_rules"
+        android:orderInCategory="2"
+        android:title="Open rules" />
+    <item
+        android:id="@+id/set_share"
+        android:orderInCategory="2"
+        android:title="Share it" />
+</menu>
